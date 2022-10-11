@@ -1,0 +1,15 @@
+.inputContainer{
+    margin: 15px;
+}
+
+.increaseWidth {
+    width: 40%;
+    border: 2px grey solid;
+    padding: 15px;
+    border-radius: 25px;
+    margin: 5px;
+}
+
+.addButton{
+    margin:5px;
+}

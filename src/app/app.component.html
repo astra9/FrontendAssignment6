@@ -1,0 +1,17 @@
+<mat-toolbar color="primary" class="mat-elevation-z4">
+
+</mat-toolbar>
+
+<div class="inputContainer">
+  <mat-form-field class="increaseWidth" [style.border-color]="getColor">
+    <mat-label style="padding-left: 5px;">Lunch Items</mat-label>
+    <input matInput placeholder="Enter lunch items separated by a comma" #todoText>
+    <button matSuffix mat-raised-button color="accent" class="addButton"
+    (click)="checkIfTooMuch(todoText.value); todoText.value=''">
+      Check if too much
+    </button>
+  </mat-form-field>
+  <div [style.color]="getColor" >
+    {{getMessage}}
+  </div>
+</div>
